@@ -136,9 +136,11 @@ export default function Home() {
           </section>
           <section className="colored-box">
             <div className="colored-box-left">
-              <h1>Episode for Jun 05, 2022</h1>
-              <p>Published Sep 16, 2022, by Jerry</p>
-              <button>Check it</button>
+              <div className="colored-box-left-top">
+                <h1>Episode for Jun 05, 2022</h1>
+                <p>Published Sep 16, 2022, by Jerry</p>
+              </div>
+              <p>Check it</p>
             </div>
             <div className="colored-box-right">
               <Image
@@ -150,6 +152,11 @@ export default function Home() {
               />
             </div>
           </section>
+        </div>
+
+        <div className="main-bottom">
+          <div className="main-bottom-left"></div>
+          <div className="main-bottom-right"></div>
         </div>
       </main>
     </main>
