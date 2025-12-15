@@ -155,7 +155,47 @@ export default function Home() {
         </div>
 
         <div className="main-bottom">
-          <div className="main-bottom-left"></div>
+          <div className="main-bottom-left">
+            <h1>Top Performing Products</h1>
+            <div className="main-bottom-left-left">
+              <p>200</p>
+              <p>150</p>
+              <p>100</p>
+              <p>50</p>
+              <p>0</p>
+            </div>
+            <div className="main-bottom-left-right">
+              <div className="main-bottom-left-right-top">
+                <div className="main-bottom-left-right-top-column">
+                  <div className="main-bottom-left-right-top-column-purple-top"></div>
+                  <div className="main-bottom-left-right-top-column-purple-bottom"></div>
+                </div>
+                <div className="main-bottom-left-right-top-column">
+                  <div className="main-bottom-left-right-top-column-cyan-top"></div>
+                  <div className="main-bottom-left-right-top-column-cyan-bottom"></div>
+                </div>
+                <div className="main-bottom-left-right-top-column">
+                  <div className="main-bottom-left-right-top-column-pink-top"></div>
+                  <div className="main-bottom-left-right-top-column-pink-bottom"></div>
+                </div>
+                <div className="main-bottom-left-right-top-column">
+                  <div className="main-bottom-left-right-top-column-orange-top"></div>
+                  <div className="main-bottom-left-right-top-column-orange-bottom"></div>
+                </div>
+                <div className="main-bottom-left-right-top-column">
+                  <div className="main-bottom-left-right-top-column-yellow-top"></div>
+                  <div className="main-bottom-left-right-top-column-yellow-bottom"></div>
+                </div>
+              </div>
+              <div className="main-bottom-left-right-bottom">
+                <p>Stoic</p>
+                <p>Weekly Show</p>
+                <p>Stereo Pro</p>
+                <p>Run Podcast</p>
+                <p>Morning Brew</p>
+              </div>
+            </div>
+          </div>
           <div className="main-bottom-right">
             <div className="main-bottom-right-top">
               <p className="main-bottom-right-top-1">Top Podcasters</p>
