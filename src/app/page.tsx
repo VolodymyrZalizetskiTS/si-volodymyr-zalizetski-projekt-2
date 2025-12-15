@@ -156,7 +156,62 @@ export default function Home() {
 
         <div className="main-bottom">
           <div className="main-bottom-left"></div>
-          <div className="main-bottom-right"></div>
+          <div className="main-bottom-right">
+            <div className="main-bottom-right-top">
+              <p className="main-bottom-right-top-1">Top Podcasters</p>
+              <p className="main-bottom-right-top-2">Top Episodes</p>
+            </div>
+            <div className="main-bottom-right-bottom">
+              <div className="profile-item">
+                <div className="profile-pfp">
+                  <Image
+                    className="person1"
+                    src="/person1.png"
+                    width={70}
+                    height={70}
+                    alt=""
+                  />
+                </div>
+                <div className="profile-info">
+                  <h2>Earth Tones</h2>
+                  <p>Wade Warren</p>
+                </div>
+                <div className="profile-date">2d</div>
+              </div>
+              <div className="profile-item">
+                <div className="profile-pfp">
+                  <Image
+                    className="person2"
+                    src="/person2.png"
+                    width={70}
+                    height={70}
+                    alt=""
+                  />
+                </div>
+                <div className="profile-info">
+                  <h2>Around the World</h2>
+                  <p>Guy Hawkings</p>
+                </div>
+                <div className="profile-date">2d</div>
+              </div>
+              <div className="profile-item">
+                <div className="profile-pfp">
+                  <Image
+                    className="person3"
+                    src="/person3.png"
+                    width={70}
+                    height={70}
+                    alt=""
+                  />
+                </div>
+                <div className="profile-info">
+                  <h2>World of Kids</h2>
+                  <p>Adam Thome</p>
+                </div>
+                <div className="profile-date">2d</div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </main>
