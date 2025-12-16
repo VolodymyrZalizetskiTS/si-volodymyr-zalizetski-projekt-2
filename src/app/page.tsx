@@ -3,6 +3,26 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="main-container">
+      <input
+        type="checkbox"
+        id="sidebar-toggle"
+        className="sidebar-toggle"
+        aria-hidden="true"
+      />
+      <label
+        htmlFor="sidebar-toggle"
+        className="burger-button"
+        aria-label="Toggle navigation"
+      >
+        <span />
+        <span />
+        <span />
+      </label>
+      <label
+        htmlFor="sidebar-toggle"
+        className="sidebar-overlay"
+        aria-hidden="true"
+      ></label>
       <div className="sidebar-div">
         <aside className="sidebar">
           <section className="sidebar-icons-top">
@@ -156,43 +176,116 @@ export default function Home() {
 
         <div className="main-bottom">
           <div className="main-bottom-left">
-            <h1>Top Performing Products</h1>
-            <div className="main-bottom-left-left">
-              <p>200</p>
-              <p>150</p>
-              <p>100</p>
-              <p>50</p>
-              <p>0</p>
-            </div>
-            <div className="main-bottom-left-right">
-              <div className="main-bottom-left-right-top">
-                <div className="main-bottom-left-right-top-column">
-                  <div className="main-bottom-left-right-top-column-purple-top"></div>
-                  <div className="main-bottom-left-right-top-column-purple-bottom"></div>
-                </div>
-                <div className="main-bottom-left-right-top-column">
-                  <div className="main-bottom-left-right-top-column-cyan-top"></div>
-                  <div className="main-bottom-left-right-top-column-cyan-bottom"></div>
-                </div>
-                <div className="main-bottom-left-right-top-column">
-                  <div className="main-bottom-left-right-top-column-pink-top"></div>
-                  <div className="main-bottom-left-right-top-column-pink-bottom"></div>
-                </div>
-                <div className="main-bottom-left-right-top-column">
-                  <div className="main-bottom-left-right-top-column-orange-top"></div>
-                  <div className="main-bottom-left-right-top-column-orange-bottom"></div>
-                </div>
-                <div className="main-bottom-left-right-top-column">
-                  <div className="main-bottom-left-right-top-column-yellow-top"></div>
-                  <div className="main-bottom-left-right-top-column-yellow-bottom"></div>
-                </div>
+            <h1>Top Performing Podcasts</h1>
+            <div className="chart-wrapper" aria-hidden="true">
+              <div className="chart-axis">
+                <p>200</p>
+                <p>150</p>
+                <p>100</p>
+                <p>50</p>
+                <p>0</p>
               </div>
-              <div className="main-bottom-left-right-bottom">
-                <p>Stoic</p>
-                <p>Weekly Show</p>
-                <p>Stereo Pro</p>
-                <p>Run Podcast</p>
-                <p>Morning Brew</p>
+              <div className="chart-area">
+                <article className="chart-column">
+                  <div className="bar-stack">
+                    <div className="chart-tooltip" aria-hidden="true">
+                      <div className="chart-tooltip-text">
+                        <p className="chart-tooltip-title">Downloads</p>
+                        <p className="chart-tooltip-value">201</p>
+                      </div>
+                      <span className="chart-tooltip-dot" />
+                    </div>
+                    <span
+                      className="bar-segment"
+                      style={{ backgroundColor: "#dfd3ff", height: "110px" }}
+                    ></span>
+                    <span
+                      className="bar-segment"
+                      style={{ backgroundColor: "#9d7adaff", height: "100px" }}
+                    ></span>
+                  </div>
+                  <p className="chart-label">Stoic</p>
+                </article>
+                <article className="chart-column">
+                  <div className="bar-stack">
+                    <div className="chart-tooltip" aria-hidden="true">
+                      <div className="chart-tooltip-text">
+                        <p className="chart-tooltip-title">Downloads</p>
+                        <p className="chart-tooltip-value">186</p>
+                      </div>
+                      <span className="chart-tooltip-dot" />
+                    </div>
+                    <span
+                      className="bar-segment"
+                      style={{ backgroundColor: "#c6dbe7ff", height: "90px" }}
+                    ></span>
+                    <span
+                      className="bar-segment"
+                      style={{ backgroundColor: "#1c84c0ff", height: "80px" }}
+                    ></span>
+                  </div>
+                  <p className="chart-label">Weekly Show</p>
+                </article>
+                <article className="chart-column">
+                  <div className="bar-stack">
+                    <div className="chart-tooltip" aria-hidden="true">
+                      <div className="chart-tooltip-text">
+                        <p className="chart-tooltip-title">Downloads</p>
+                        <p className="chart-tooltip-value">152</p>
+                      </div>
+                      <span className="chart-tooltip-dot" />
+                    </div>
+                    <span
+                      className="bar-segment"
+                      style={{ backgroundColor: "#ffe3ef", height: "70px" }}
+                    ></span>
+                    <span
+                      className="bar-segment"
+                      style={{ backgroundColor: "#ff58b2", height: "60px" }}
+                    ></span>
+                  </div>
+                  <p className="chart-label">Stereo Pro</p>
+                </article>
+                <article className="chart-column">
+                  <div className="bar-stack">
+                    <div className="chart-tooltip" aria-hidden="true">
+                      <div className="chart-tooltip-text">
+                        <p className="chart-tooltip-title">Downloads</p>
+                        <p className="chart-tooltip-value">118</p>
+                      </div>
+                      <span className="chart-tooltip-dot" />
+                    </div>
+                    <span
+                      className="bar-segment"
+                      style={{ backgroundColor: "#ffdccb", height: "60px" }}
+                    ></span>
+                    <span
+                      className="bar-segment"
+                      style={{ backgroundColor: "#ff5e24", height: "50px" }}
+                    ></span>
+                  </div>
+                  <p className="chart-label">Run Podcast</p>
+                </article>
+                <article className="chart-column">
+                  <div className="bar-stack">
+                    <div className="chart-tooltip" aria-hidden="true">
+                      <div className="chart-tooltip-text">
+                        <p className="chart-tooltip-title">Downloads</p>
+                        <p className="chart-tooltip-value">96</p>
+                      </div>
+                      <span className="chart-tooltip-dot" />
+                    </div>
+                    <span
+                      className="bar-segment"
+                      style={{ backgroundColor: "#fff2cc", height: "50px" }}
+                    ></span>
+                    <span
+                      className="bar-segment"
+                      style={{ backgroundColor: "#f9b11a", height: "40px" }}
+                    ></span>
+                  </div>
+                  <p className="chart-label">Morning Brew</p>
+                </article>
               </div>
             </div>
           </div>
