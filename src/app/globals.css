@@ -73,7 +73,7 @@ h1 {
 .sidebar-overlay {
   display: none;
 }
-div.sidebar-div {
+.sidebar-div {
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
@@ -776,21 +776,30 @@ div.sidebar-div {
     gap: 5px;
   }
   .Header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
     padding: 0 2px 20px;
   }
   .search-bar {
-    width: 100%;
-    padding: 12px 14px;
+    flex: 1;
+    width: auto;
+    padding: 10px 14px;
     border-radius: 16px;
-    background: #fff;
+    background: #ffffff;
     justify-content: flex-start;
+    gap: 6px;
+    margin: 0;
+  }
+  .search-bar .search.icon {
+    margin: 10px;
   }
   .header-misc {
-    width: 100%;
-    justify-content: space-between;
+    flex-shrink: 0;
+    gap: 12px;
+  }
+  .header-misc .bell.icon {
+    margin: 10px;
   }
   .numbers {
     gap: 12px;
