@@ -757,3 +757,99 @@ h1 {
     font-size: 24px;
   }
 }
+
+@media (max-width: 440px) {
+  body {
+    padding: 18px 12px;
+  }
+  .main-container {
+    padding: 68px 12px 16px;
+    border-width: 6px;
+    border-radius: 18px;
+  }
+  .burger-button {
+    top: 14px;
+    right: 14px;
+    width: 44px;
+    height: 44px;
+    gap: 5px;
+  }
+  .Header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0 2px 20px;
+  }
+  .search-bar {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 16px;
+    background: #fff;
+    justify-content: flex-start;
+  }
+  .header-misc {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .numbers {
+    gap: 12px;
+  }
+  .numbers-downloads,
+  .numbers-liveorders {
+    padding: 16px;
+  }
+  .numbers-downloads h1,
+  .numbers-liveorders h1 {
+    font-size: 26px;
+  }
+  .colored-box {
+    flex-direction: column;
+  }
+  .colored-box-left {
+    width: 100%;
+    padding: 24px 16px;
+  }
+  .colored-box-left-top h1 {
+    font-size: 32px;
+  }
+  .colored-box-right {
+    display: none;
+  }
+  .main-bottom {
+    gap: 24px;
+  }
+  .main-bottom-right {
+    padding: 0;
+  }
+  .main-bottom-right-top {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .profile-item {
+    gap: 12px;
+    padding: 14px 0;
+  }
+  .chart-wrapper {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .chart-axis {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .chart-area {
+    min-width: 0;
+    width: 100%;
+    padding: 0;
+    gap: 12px;
+  }
+  .chart-column {
+    min-width: 48px;
+  }
+  .bar-stack {
+    height: 180px;
+  }
+}
