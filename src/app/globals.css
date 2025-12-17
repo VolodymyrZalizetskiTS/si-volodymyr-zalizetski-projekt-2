@@ -750,6 +750,12 @@ h1 {
     pointer-events: none;
     z-index: 30;
   }
+  .sidebar-icons-middle {
+    width: fit-content;
+  }
+  .sidebar {
+    min-width: fit-content;
+  }
   .sidebar-toggle:checked ~ .sidebar-div {
     transform: translateX(0);
     opacity: 1;
@@ -838,8 +844,6 @@ h1 {
     flex: 1;
     width: auto;
     padding: 10px 14px;
-    border-radius: 16px;
-    background: #ffffff;
     justify-content: flex-start;
     gap: 6px;
     margin: 0;
