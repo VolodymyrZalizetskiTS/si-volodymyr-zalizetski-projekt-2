@@ -26,6 +26,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://necolas.github.io/normalize.css/7.0.0/normalize.css"
         />
+        <link rel="icon" href="/Profile_Pic.png" />
       </head>
       <body
         className={`${montserrat.variable} antialiased bg-black text-white`}

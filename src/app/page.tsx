@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="main-container">
+    <div className="main-container">
       <input
         type="checkbox"
         id="sidebar-toggle"
@@ -23,7 +23,7 @@ export default function Home() {
         className="sidebar-overlay"
         aria-hidden="true"
       ></label>
-      <aside className="sidebar-div" aria-label="Primary navigation">
+      <div className="sidebar-div" aria-label="Primary navigation">
         <nav className="sidebar" aria-label="Dashboard links">
           <section className="sidebar-icons-top">
             <Image
@@ -31,7 +31,7 @@ export default function Home() {
               src="/Logo_Icon.png"
               width={24}
               height={24}
-              alt=""
+              alt="logo"
             />
           </section>
           <section className="sidebar-icons-middle">
@@ -40,7 +40,7 @@ export default function Home() {
               src="/Home_Icon.png"
               width={24}
               height={24}
-              alt=""
+              alt="home"
             />
             <section className="sidebar-icons">
               <Image
@@ -48,21 +48,21 @@ export default function Home() {
                 src="/Message_Icon.png"
                 width={24}
                 height={24}
-                alt=""
+                alt="message"
               />
               <Image
                 className="pie icon"
                 src="/Pie_Icon.png"
                 width={24}
                 height={24}
-                alt=""
+                alt="pie"
               />
               <Image
                 className="people icon"
                 src="/People_Icon.png"
                 width={24}
                 height={24}
-                alt=""
+                alt="people"
               />
             </section>
           </section>
@@ -72,11 +72,11 @@ export default function Home() {
               src="/Settings_Icon.png"
               width={24}
               height={24}
-              alt=""
+              alt="settings"
             />
           </section>
         </nav>
-      </aside>
+      </div>
       <section className="main-content">
         <header className="Header">
           <section className="search-bar">
@@ -85,7 +85,7 @@ export default function Home() {
               src="/Search_Icon.png"
               width={24}
               height={24}
-              alt=""
+              alt="search"
             />
             <p>Search</p>
           </section>
@@ -95,7 +95,7 @@ export default function Home() {
               src="/Bell_Icon.png"
               width={24}
               height={24}
-              alt=""
+              alt="bell"
             />
             <section className="profile">
               <Image
@@ -103,14 +103,14 @@ export default function Home() {
                 src="/3Dots_Icon.png"
                 width={24}
                 height={24}
-                alt=""
+                alt="dots"
               />
               <Image
                 className="profile-pic"
                 src="/Profile_Pic.png"
                 width={40}
                 height={40}
-                alt=""
+                alt="pfp"
               />
             </section>
           </section>
@@ -126,7 +126,7 @@ export default function Home() {
                     src="/Downloads_Icon.png"
                     width={40}
                     height={40}
-                    alt=""
+                    alt="downloads"
                   />
                 </section>
                 <p>DOWNLOADS</p>
@@ -144,7 +144,7 @@ export default function Home() {
                     src="/Microphone_Icon.png"
                     width={40}
                     height={40}
-                    alt=""
+                    alt="liveorders"
                   />
                 </section>
                 <p>LIVE ORDERS</p>
@@ -168,7 +168,7 @@ export default function Home() {
                 src="/MainPerson_Image.png"
                 width={40}
                 height={40}
-                alt=""
+                alt="mainperson"
               />
             </section>
           </article>
@@ -302,7 +302,7 @@ export default function Home() {
                     src="/person1.png"
                     width={70}
                     height={70}
-                    alt=""
+                    alt="person1"
                   />
                 </section>
                 <section className="profile-info">
@@ -318,7 +318,7 @@ export default function Home() {
                     src="/person2.png"
                     width={70}
                     height={70}
-                    alt=""
+                    alt="person2"
                   />
                 </section>
                 <section className="profile-info">
@@ -334,7 +334,7 @@ export default function Home() {
                     src="/person3.png"
                     width={70}
                     height={70}
-                    alt=""
+                    alt="person3"
                   />
                 </section>
                 <section className="profile-info">
@@ -347,6 +347,6 @@ export default function Home() {
           </aside>
         </section>
       </section>
-    </main>
+    </div>
   );
 }
